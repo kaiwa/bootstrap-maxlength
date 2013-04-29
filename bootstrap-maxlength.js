@@ -4,8 +4,11 @@
       var max = $(this).attr('maxlength');
       var val = $(this).attr('value');
       var cur = 0;
-      if(val)
-        cur = val.length;
+      
+      if (val) {
+          cur = val.length;
+      }
+
       var left = max - cur;
 
       $(this).parent().addClass('input-append');
@@ -15,10 +18,15 @@
         var max = $(this).attr('maxlength');
         var val = $(this).attr('value');
         var cur = 0;
-        if(val)
+        
+        if (val) {
           cur = val.length;
+        }
+        
         var left = max-cur;
+        
         $(this).next(".maxlength").text(left.toString());
+
         return this;
       });
     });
