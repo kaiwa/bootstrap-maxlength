@@ -2,6 +2,11 @@
   $.fn.maxlength = function() {
     $(this).each(function() {
       var max = $(this).attr('maxlength');
+
+      if (max <= 0) {
+        return;
+      }
+
       var val = $(this).val();
       var cur = 0;
 
