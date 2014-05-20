@@ -7,19 +7,10 @@
         return;
       }
 
-      var val = $(this).val();
-      var cur = 0;
-
-      if (val) {
-          cur = val.length;
-      }
-
-      var left = max - cur;
-
       if (!$(this).parent().hasClass('input-group')) {
         $(this).wrap("<div class=\"input-group\"></div>");
       }
-      $(this).after("<span class=\"input-group-addon maxlength\">" + left.toString() + "</span>");
+      $(this).after("<span class=\"input-group-addon maxlength\"></span>");
 
       $(this).bind('input', function(e) {
         var max = $(this).attr('maxlength');
@@ -35,7 +26,7 @@
         $(this).next(".maxlength").text(left.toString());
 
         return this;
-      });
+      }).trigger('input');
     });
     return this;
   };
