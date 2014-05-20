@@ -2,7 +2,7 @@
   $.fn.maxlength = function() {
     $(this).each(function() {
       var max = $(this).attr('maxlength');
-      var val = $(this).attr('value');
+      var val = $(this).val();
       var cur = 0;
 
       if (val) {
@@ -16,7 +16,7 @@
 
       $(this).bind('input', function(e) {
         var max = $(this).attr('maxlength');
-        var val = $(this).attr('value');
+        var val = $(this).val();
         var cur = 0;
 
         if (val) {
