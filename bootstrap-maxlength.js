@@ -16,8 +16,10 @@
 
       var left = max - cur;
 
-      $(this).parent().addClass('input-group');
-      $(this).after("<span class='input-group-addon maxlength'>" + left.toString() + "</span>");
+      if (!$(this).parent().hasClass('input-group')) {
+        $(this).wrap("<div class=\"input-group\"></div>");
+      }
+      $(this).after("<span class=\"input-group-addon maxlength\">" + left.toString() + "</span>");
 
       $(this).bind('input', function(e) {
         var max = $(this).attr('maxlength');
