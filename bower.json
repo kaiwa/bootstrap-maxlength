@@ -1,16 +1,18 @@
 {
-  "name": "bootstrap-maxlength",
+  "name": "bootstrap-maxlength-simple",
   "main": "bootstrap-maxlength.js",
   "homepage": "https://github.com/kaiwa/bootstrap-maxlength",
   "authors": [
     "kaiwa <kai@kawa.in>"
   ],
-  "description": "Adds an indicator to text inputs which shows the count of left characters",
+  "description": "jQuery plugin which adds an indicator to text inputs which shows the count of left characters",
   "moduleType": [],
   "keywords": [
     "twbs",
     "bootstrap",
-    "form"
+    "form",
+    "twitter",
+    "jquery"
   ],
   "license": "MIT"
 }
