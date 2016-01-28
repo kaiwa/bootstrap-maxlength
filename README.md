@@ -3,6 +3,8 @@ Twitter Bootstrap 3 jQuery maxlength plugin
 
 Appends a character countdown to input fields, showing the characters left until maxlength is reached.
 
+![Alt text](/bootstrap-maxlength-screenshot.png?raw=true "Bootstrap Maxlength Screenshot")
+
 Usage
 -----
 
@@ -16,10 +18,6 @@ Usage
     });
     </script>
     
-Result:
-
-![Alt text](/bootstrap-maxlength-screenshot.png?raw=true "Bootstrap Maxlength Screenshot")
-
 Installation
 ------------
 
