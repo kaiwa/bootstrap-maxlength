@@ -14,7 +14,7 @@ Usage
 
     <script>
     $(document).ready(function() {
-        $("input[type='text']").maxlength();
+        $("input[maxlength]").maxlength();
     });
     </script>
     
