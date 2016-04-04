@@ -3,8 +3,8 @@
     $(this).each(function() {
       var max = $(this).attr('maxlength');
 
-      if (max <= 0) {
-        return;
+      if (max <= 0 || max === undefined) {
+        throw new Error('maxlength attribut must be defined and higher than 0');
       }
 
       if (!$(this).parent().hasClass('input-group')) {
