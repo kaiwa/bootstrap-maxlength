@@ -5,40 +5,43 @@ Appends a character countdown to input fields, showing the characters left until
 
 ![Alt text](/bootstrap-maxlength-screenshot.png?raw=true "Bootstrap Maxlength Screenshot")
 
-Usage
------
+Usage Example
+-------------
+```html
+<div>
+    <input type="text" maxlength="120" />
+</div>
 
-    <div>
-        <input type="text" maxlength="120" />
-    </div>
+<!-- Adjust the path to your bootstrap-maxlength.js copy -->
+<script src="/js/bootstrap-maxlength/bootstrap-maxlength.js"></script>
 
-    <script>
-    $(document).ready(function() {
-        $("input[maxlength]").maxlength();
-    });
-    </script>
+<!-- Apply maxlength() on all input fields which have a maxlength attribute -->
+<script>
+$(document).ready(function() {
+    $("input[maxlength]").maxlength();
+});
+</script>
+```
     
 Installation
 ------------
 
-Add the `bootstrap-maxlength.js` file to your html source like this
+### Download
 
-    <script src="/js/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+Simply [download a zipped release](https://github.com/kaiwa/bootstrap-maxlength/releases), unpack it, then add the `bootstrap-maxlength.js` file to your project.
 
-### Download using Bower
+### Bower
 
 Add the package `bootstrap-maxlength-simple` to your bower.json project file.
 
-    {
-        "name": "My Project",
-        "dependencies": {
-            "bootstrap-maxlength-simple": "3.*"
-        }
+```javascript
+{
+    "name": "My Project",
+    "dependencies": {
+        "bootstrap-maxlength-simple": "3.*"
     }
-
-### Download without Bower
-
-[Download a zipped release](https://github.com/kaiwa/bootstrap-maxlength/releases), unpack it, then add the `bootstrap-maxlength.js` file to your project.
+}
+```
 
 Earlier versions
 ----------------
