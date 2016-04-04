@@ -5,7 +5,7 @@ Appends a character countdown to input fields, showing the characters left until
 
 ![Screenshot](/bootstrap-maxlength-screenshot.png?raw=true "Bootstrap Maxlength Screenshot")
 
-Try the [jsfiddle demo](https://jsfiddle.net/r9bjLax1/) to see it live!
+Try the [jsfiddle demo](https://jsfiddle.net/r9bjLax1/1) to see it live!
 
 Usage Example
 -------------
